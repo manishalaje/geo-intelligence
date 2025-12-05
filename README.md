@@ -39,31 +39,34 @@ Built for **real-world mapping roles** — perfect for portfolios, interviews & 
 | Favorites & history | ✅ | Local Indexed DB |
 | Dark/Light themes | ✅ | Custom UI |
 | Travel modes (Drive/Walk/Cycle/Transit) | ✅ | Distance Matrix |
-| Heatmaps & analytics | 🔄 Coming | Clustering + Folium |
 
 ---
 
-## 🖥️ Screenshots
-
 ### 🔍 Home — Explore Places Nearby
-![Home UI](assets/home.png)
+<div align="center">
+  <img src="assets/home.png" width="500"/>
+</div>
 
 ---
 
 ### ⭐ Recommendation List — Sorted Smartly with ML Scoring
-![Results List](assets/results.png)
+<div align="center">
+  <img src="assets/results.png" width="450"/>
+</div>
 
 ---
 
 ### 🚦 Routing & Travel Mode Comparison
-![Routing View](assets/routing.png)
+<div align="center">
+  <img src="assets/routing.png" width="500"/>
+</div>
 
 ---
 
 ### 🌙 Beautiful Dark Mode
-![Dark Mode](assets/dark-mode.png)
-
----
+<div align="center">
+  <img src="assets/dark-mode.png" width="500"/>
+</div>
 
 ## 🛠 Tech Stack
 
