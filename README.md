@@ -1,46 +1,91 @@
-# SmartGeo | Geo-Intelligence Recommender System
+<div align="center">
+  <img src="assets/logo.png" width="200" alt="SmartGeo Logo"/>
+  <h1>SmartGeo | Geo-Intelligence Recommender System</h1>
+  <strong>React + FastAPI + AI-powered Maps + Real-time Routing</strong>
+  <br/><br/>
 
-[![License: MIT](https://img.shields.io/github/license/manishalaje/geo-intelligence.svg)](LICENSE)  
-[![Stars on GitHub](https://img.shields.io/github/stars/manishalaje/geo-intelligence.svg)]()  
-[![Forks on GitHub](https://img.shields.io/github/forks/manishalaje/geo-intelligence.svg)]()  
-[![Issues on GitHub](https://img.shields.io/github/issues/manishalaje/geo-intelligence.svg)]()
+[![License: MIT](https://img.shields.io/github/license/manishalaje/geo-intelligence.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/manishalaje/geo-intelligence.svg)]()
+[![Forks](https://img.shields.io/github/forks/manishalaje/geo-intelligence.svg)]()
+[![Issues](https://img.shields.io/github/issues/manishalaje/geo-intelligence.svg)]()
 
-![SmartGeo Logo](/mnt/data/47596bf3-53f7-45e5-89b7-87f00f74ba2f.png)
+</div>
+
+---
 
 ## 🚀 What is SmartGeo?
 
-SmartGeo is a modern, full-stack geo-intelligence platform blending machine learning, geospatial APIs and interactive maps — like a mini-Google-Maps alternative.  
-It offers smart place recommendations, draggable-pin location search, real-time routing & distance/time comparison across travel modes, and user-focused features like favorites, history and dynamic map UI.
+SmartGeo is a next-gen location intelligence platform — a mini alternative to Google Maps — offering:
+
+- 🔍 Smart search around you (restaurants, hospitals, metro…)
+- 🧭 Draggable pin search — **search anywhere instantly**
+- 🚦 Real routing & travel mode comparison (Drive / Walk / Cycle / Transit)
+- ⭐ Save favorites and revisit history
+- 🌙 Sleek dark-mode design
+- 🤖 ML-based scoring for better ranking
+- 📊 Geo-analytics with heatmaps and clustering (planned)
+
+Built for **real-world mapping roles** — perfect for portfolios, interviews & GIS/AI hiring.
 
 ---
 
-## 🧩 Key Features
+## 🧩 Features Overview
 
-| Feature | Description |
-|--------|-------------|
-| 🔍 Smart Place Search | Search nearby places by category (cafes, hotels, metro, malls…) |
-| 🧠 ML-Powered Ranking | Results ranked by rating, popularity, distance/time — for smarter recommendations |
-| 🗺️ Map + Draggable Pin UI | Drag map pin to anywhere and dynamically refresh results |
-| 🚦 Real-time Routing & Travel Time | Drive / Walk / Cycle / Transit routing using APIs |
-| ⭐ Favorites & History | Save places you like — supports personal use or future features |
-| 🌙 Light & Dark Map Themes | Clean UI with theme support |
-| 🌐 Global Coverage | Works across cities worldwide |
-| 🔄 Heatmap & Clustering | Detect hotspots, area-based density insights (via K-Means & Folium) |
-| ⚡ Fast & Responsive UI | React + Leaflet frontend + FastAPI backend for smooth experience |
-| 🧪 Automated Testing & CI | Pytest + GitHub Actions for consistent quality |
+| Feature | Status | Powered By |
+|--------|--------|------------|
+| Smart place recommendations | ✅ | ML Scoring + Geoapify |
+| Real-time routing with ETA | ✅ | Routing API |
+| Draggable map pin | ✅ | Leaflet |
+| Favorites & history | ✅ | Local Indexed DB |
+| Dark/Light themes | ✅ | Custom UI |
+| Travel modes (Drive/Walk/Cycle/Transit) | ✅ | Distance Matrix |
+| Heatmaps & analytics | 🔄 Coming | Clustering + Folium |
 
 ---
 
-## 🛠️ Tech Stack
+## 🖥️ Screenshots
 
-- **Frontend**: React, Vite, Leaflet maps, modern CSS  
-- **Backend**: FastAPI (Python), REST API, routing & geocoding through Geoapify  
-- **Maps & Geodata**: :contentReference[oaicite:1]{index=1} — Places, Geocoding, Routing, Distance Matrix  
-- **ML & Data**: Python — custom scoring, optional clustering, heatmaps  
-- **Database / Cache**: SQLite + JSON-based caching for performance & reduced API calls  
-- **DevOps**: GitHub Actions CI, environment-based configs, modular architecture  
+### 🔍 Home — Explore Places Nearby
+![Home UI](assets/home.png)
 
 ---
 
-## 📁 Project Structure
+### ⭐ Recommendation List — Sorted Smartly with ML Scoring
+![Results List](assets/results.png)
 
+---
+
+### 🚦 Routing & Travel Mode Comparison
+![Routing View](assets/routing.png)
+
+---
+
+### 🌙 Beautiful Dark Mode
+![Dark Mode](assets/dark-mode.png)
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|------|------------|
+| UI / Frontend | React + Vite + Leaflet |
+| Backend API | FastAPI (Python) |
+| Maps & Data | Geoapify — Places, Routing, Matrix, Geocoding |
+| ML Logic | Python weighted ranking + clustering |
+| Local Data | SQLite + caching |
+| CI & Quality | GitHub Actions + Pytest |
+
+---
+
+## 🧱 Architecture
+
+```mermaid
+flowchart LR
+    User -->|Search / Click / Drag| Frontend[React + Leaflet UI]
+    Frontend -->|REST API| Backend[FastAPI Server]
+    Backend -->|Places / Routing / Matrix| Geoapify[(Geoapify API)]
+    Backend --> ML[Ranking Engine]
+    ML --> Backend
+    Backend --> Cache[(Local Cache / DB)]
+    Backend --> Frontend
