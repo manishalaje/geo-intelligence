@@ -1,104 +1,46 @@
-🚀 SmartGeo — Geo-Intelligence Recommender System
+# SmartGeo | Geo-Intelligence Recommender System
 
-React + FastAPI + AI-powered Maps + Real-time Routing
+[![License: MIT](https://img.shields.io/github/license/manishalaje/geo-intelligence.svg)](LICENSE)  
+[![Stars on GitHub](https://img.shields.io/github/stars/manishalaje/geo-intelligence.svg)]()  
+[![Forks on GitHub](https://img.shields.io/github/forks/manishalaje/geo-intelligence.svg)]()  
+[![Issues on GitHub](https://img.shields.io/github/issues/manishalaje/geo-intelligence.svg)]()
 
-SmartGeo is a modern location intelligence platform that works like a mini Google Maps alternative — providing smart place recommendations, draggable location search, real-time routing, and travel mode comparison.
+![SmartGeo Logo](/mnt/data/47596bf3-53f7-45e5-89b7-87f00f74ba2f.png)
 
-Built with:
+## 🚀 What is SmartGeo?
 
-🧠 Machine Learning + Smart Sorting
+SmartGeo is a modern, full-stack geo-intelligence platform blending machine learning, geospatial APIs and interactive maps — like a mini-Google-Maps alternative.  
+It offers smart place recommendations, draggable-pin location search, real-time routing & distance/time comparison across travel modes, and user-focused features like favorites, history and dynamic map UI.
 
-🌍 Map Intelligence (Leaflet + Geoapify)
+---
 
-⚡ Full-stack performance (React + FastAPI)
+## 🧩 Key Features
 
-🎯 Real-world features: history, favorites, timing & more
+| Feature | Description |
+|--------|-------------|
+| 🔍 Smart Place Search | Search nearby places by category (cafes, hotels, metro, malls…) |
+| 🧠 ML-Powered Ranking | Results ranked by rating, popularity, distance/time — for smarter recommendations |
+| 🗺️ Map + Draggable Pin UI | Drag map pin to anywhere and dynamically refresh results |
+| 🚦 Real-time Routing & Travel Time | Drive / Walk / Cycle / Transit routing using APIs |
+| ⭐ Favorites & History | Save places you like — supports personal use or future features |
+| 🌙 Light & Dark Map Themes | Clean UI with theme support |
+| 🌐 Global Coverage | Works across cities worldwide |
+| 🔄 Heatmap & Clustering | Detect hotspots, area-based density insights (via K-Means & Folium) |
+| ⚡ Fast & Responsive UI | React + Leaflet frontend + FastAPI backend for smooth experience |
+| 🧪 Automated Testing & CI | Pytest + GitHub Actions for consistent quality |
 
-✨ Key Features
-Feature	Status
-📌 Draggable Pin — Search anywhere instantly	✅
-🗺 Light & Dark Map Themes	✅
-🚦 Traffic Overlay (Demo)	✅
-🧭 Real Directions — Drive / Walk / Cycle / Transit routes	✅
-⭐ Save Places as Favorites	✅
-🧩 Categories: Hotels, Metro, Restaurants, Malls, etc	✅
-⏱ Travel time + distance for each mode	✅
-⚡ Fast Search + Smooth UI Animations	✅
-🔍 Search cities / landmarks globally	✅
-🧭 Demo Usage Flow
+---
 
-1️⃣ Grant location or search for a place
-2️⃣ Choose category — restaurant, hotel, bus stop…
-3️⃣ Click any result → see routes, timing & popup details
-4️⃣ Drag center pin → dynamic refresh of recommendations
-5️⃣ Save favorite places ⭐
+## 🛠️ Tech Stack
 
-🖥 Tech Stack
-Layer	Technologies
-Frontend	React, Leaflet Maps, Vite, CSS
-Backend	FastAPI, Python, Requests
-Routing API	Geoapify Routing API
-Search + Place Data	Geoapify Places API
-ML / Ranking	Python + Scoring (extendable)
-📂 Project Structure
-geo-intelligence/
-│
-├── backend/
-│   ├── main.py
-│   ├── routers/
-│   ├── services/
-│   ├── data/
-│   └── ...
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── ...
-│
-└── README.md
+- **Frontend**: React, Vite, Leaflet maps, modern CSS  
+- **Backend**: FastAPI (Python), REST API, routing & geocoding through Geoapify  
+- **Maps & Geodata**: :contentReference[oaicite:1]{index=1} — Places, Geocoding, Routing, Distance Matrix  
+- **ML & Data**: Python — custom scoring, optional clustering, heatmaps  
+- **Database / Cache**: SQLite + JSON-based caching for performance & reduced API calls  
+- **DevOps**: GitHub Actions CI, environment-based configs, modular architecture  
 
-⚙️ Local Setup
-📌 1️⃣ Backend Setup (FastAPI)
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
+---
 
+## 📁 Project Structure
 
-Make sure .env contains your Geoapify API key:
-
-GEOAPIFY_API_KEY=your_key_here
-
-
-➡ Backend will run at:
-📍 http://localhost:8000
-
-🌐 2️⃣ Frontend Setup (React)
-cd frontend
-npm install
-npm run dev
-
-
-➡ Open in browser:
-📍 http://localhost:5173
-
-🧪 Future Enhancements (Your Growth Roadmap)
-Feature	Status
-📍 Street View (static)	Coming soon
-⭐ Recommendation improvement using ML	In progress
-📊 Heatmaps + Insights	Planned
-📝 User login + saved history cloud sync	Planned
-🔍 Reviews & ratings from Google Places	Researching
-🧑‍💻 Author
-
-👤 Manish A M
-📍 Bengaluru, India
-🎓 Smart Geo-Spatial Intelligence Innovator
-⭐ Will soon become Google SDE 😉
-
-❤️ Acknowledgements
-
-Geoapify Maps & Routing APIs
-
-OpenStreetMap Data
-
-Inspiration from Google Maps UI
